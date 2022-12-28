@@ -1,0 +1,29 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div>
+<h1>Implementing one way data biding via interpolation</h1>
+  <strong>{{firstName}} </strong>
+  <strong>{{lastName}} </strong>
+</div>
+
+<div>
+  <span [innerHTML] = 'firstName'></span>
+  <h1 [style.color] = "blue"> Here I am using property Binding</h1>
+</div>
+<div>
+<h1>Implementing 1 way data biding via Event</h1>
+  <button (click)="myFunction()">Show Alert</button>
+</div>
+<div>
+  <h1>Implementing two way data biding</h1>
+  <p>
+    Enter the value : <input [(ngModel)] = 'val'>
+    <br>
+    Entered value is : {{val}}
+  </p>
+</div>
+
+
+
